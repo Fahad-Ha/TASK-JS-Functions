@@ -8,8 +8,8 @@
  */
 function greet(name) {
   // Your code here
+  console.log(`Hello ${name}`);
 }
-
 /**
  * isOdd(n):
  * - receives a number n
@@ -21,8 +21,12 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  if (n % 2 == 0) {
+    console.log("false");
+  } else {
+    console.log("true");
+  }
 }
-
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -34,7 +38,27 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  let totalOdd = [];
+  for (let num = 0; num < n; num++) {
+      totalOdd.push(num);
+  }
+  const odds = totalOdd.filter((num) => num % 2 == 1);
+  console.log(odds.length);
 }
+
+  // let totalOdd = 0;
+  // for (let num = 0; num < n && num % 2 == 1; num++) {
+  //    totalOdd += num;
+  //    console.log(totalOdd);
+  // }
+  // console.log(totalOdd);
+  // };
+  
+  
+ 
+
+
+oddsSmallerThan(5);
 
 /**
  * squareOrDouble(n):
@@ -48,4 +72,10 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  if (n % 2 == 0) {
+    console.log(n * 2);
+  } else {
+    console.log(n * n);
+  }
 }
+
