@@ -58,7 +58,6 @@ function oddsSmallerThan(n) {
  
 
 
-oddsSmallerThan(5);
 
 /**
  * squareOrDouble(n):
