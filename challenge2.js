@@ -22,11 +22,12 @@ function greet(name) {
 function isOdd(n) {
   // Your code here
   if (n % 2 == 0) {
-    console.log("false");
+    return false;
   } else {
-    console.log("true");
+    return true;
   }
 }
+
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -43,8 +44,10 @@ function oddsSmallerThan(n) {
       totalOdd.push(num);
   }
   const odds = totalOdd.filter((num) => num % 2 == 1);
-  console.log(odds.length);
+  return odds.length;
 }
+// another solution 
+  // Math.floor(n/2);
 
   // let totalOdd = 0;
   // for (let num = 0; num < n && num % 2 == 1; num++) {
@@ -72,9 +75,9 @@ function oddsSmallerThan(n) {
 function squareOrDouble(n) {
   // Your code here
   if (n % 2 == 0) {
-    console.log(n * 2);
+    return n * 2;
   } else {
-    console.log(n * n);
+    return n * n;
   }
 }
 
